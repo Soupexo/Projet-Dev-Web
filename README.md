@@ -38,11 +38,12 @@ Copiez-le dans le dossier `lib` de votre projet.
 
 ## Construction du projet web
 
-1. **Test de la plateforme**
-   Logs utiles :
-   -login : adminRespFormation -mdp : admin
-   -login : enseignant -mdp : enseignant
-   -login : enseignantRespAnneeTest -mdp : enseignantRespAnneeTest
-   -login : enseignantRespFiliereTest -mdp : enseignantRespFiliereTest
-   -login : enseignantRespSemestreTest -mdp : enseignantRespSemestreTest
-   -login : etudiantRespTest -mdp : etudiantRespTest
+1. **Test de la plateforme**  
+   Logs utiles (chaque couple de login/mdp correspond à une responsabilité dotée de permissions différentes) :
+
+   - login : `adminRespFormation` - mdp : `admin`
+   - login : `enseignant` - mdp : `enseignant`
+   - login : `enseignantRespAnneeTest` - mdp : `enseignantRespAnneeTest`
+   - login : `enseignantRespFiliereTest` - mdp : `enseignantRespFiliereTest`
+   - login : `enseignantRespSemestreTest` - mdp : `enseignantRespSemestreTest`
+   - login : `etudiantRespTest` - mdp : `etudiantRespTest`
