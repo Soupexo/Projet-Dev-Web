@@ -38,12 +38,20 @@ Copiez-le dans le dossier `lib` de votre projet.
 
 ## Construction du projet web
 
-1. **Test de la plateforme**  
-   Logs utiles (chaque couple de login/mdp correspond à une responsabilité dotée de permissions différentes) :
+### 1. Accès
+Pour un premier accès au site web, vous pouvez vous diriger directement vers `routeur.php`.
 
-   - login : `adminRespFormation` - mdp : `admin`
-   - login : `enseignant` - mdp : `enseignant`
-   - login : `enseignantRespAnneeTest` - mdp : `enseignantRespAnneeTest`
-   - login : `enseignantRespFiliereTest` - mdp : `enseignantRespFiliereTest`
-   - login : `enseignantRespSemestreTest` - mdp : `enseignantRespSemestreTest`
-   - login : `etudiantRespTest` - mdp : `etudiantRespTest`
+### 2. Test de la plateforme
+Les informations suivantes permettent de se connecter avec différents profils. Chaque couple login/mdp correspond à une responsabilité dotée de permissions différentes :
+
+- login : `adminRespFormation` - mdp : `admin` (Responsabilité : enseignant responsable de formation, équivalent admin)  
+- login : `enseignant` - mdp : `enseignant` (Responsabilité : enseignant classique)  
+- login : `enseignantRespAnneeTest` - mdp : `enseignantRespAnneeTest` (Responsabilité : enseignant responsable d'année)  
+- login : `enseignantRespFiliereTest` - mdp : `enseignantRespFiliereTest` (Responsabilité : enseignant responsable de filière)  
+- login : `enseignantRespSemestreTest` - mdp : `enseignantRespSemestreTest` (Responsabilité : enseignant responsable de semestre)  
+- login : `etudiantRespTest` - mdp : `etudiantRespTest` (Responsabilité : étudiant)
+
+### 3. Précisions
+- La vue principale (accueil `routeur.php`) affiche tous les étudiants affectés à un groupe.  
+- La vue *Liste des étudiants détaillée* (pour les enseignants classiques) affiche les étudiants ayant au moins un redoublement et affectés à un groupe.
+
