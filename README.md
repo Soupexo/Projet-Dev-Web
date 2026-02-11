@@ -36,9 +36,9 @@ Copiez-le dans le dossier `lib` de votre projet.
 
 ---
 
-## Construction du projet web
+## Accès de la projet web
 
-### 1. Accès
+### 1. Premier contact
 Pour un premier accès au site web, vous pouvez vous diriger directement vers `routeur.php`.
 
 ### 2. Test de la plateforme
