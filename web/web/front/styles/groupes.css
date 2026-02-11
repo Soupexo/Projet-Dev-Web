@@ -1,0 +1,114 @@
+.groupes-page {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    font-family: "Segoe UI", sans-serif;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+.groupes-page h2 {
+    text-align: center;
+    color: #3a4a5a;
+    margin-top: 0;
+}
+
+/* Liste des groupes */
+.groupes-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    margin-top: 25px;
+}
+
+/* Carte groupe */
+.groupe-card {
+    background: #f7faff;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 4px solid #4a90e2;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.groupe-card h3 {
+    margin: 0;
+    color: #2f3e4f;
+    font-size: 18px;
+}
+
+.groupe-card .description {
+    margin: 8px 0 15px;
+    color: #6b7a8c;
+    font-size: 14px;
+}
+
+.groupe-card .infos p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #4a4a4a;
+}
+
+/* Formulaire création / modification */
+.form-inline {
+    background: #f7faff;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 4px solid #4a90e2;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.form-inline .form-group {
+    display: flex;
+    flex-direction: column;
+    min-width: 160px;
+    flex: 1;
+}
+
+.form-inline label {
+    font-weight: 600;
+    color: #2f3b4a;
+    margin-bottom: 6px;
+}
+
+.form-inline .form-control {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #d0d7e2;
+    width: 100%;
+    max-width: 320px;
+}
+
+.form-inline .btn {
+    padding: 10px 14px;
+    border-radius: 6px;
+    border: none;
+    background: #4a90e2;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media (max-width: 720px) {
+    .form-inline { flex-direction: column; }
+    .form-inline .form-group { width: 100%; }
+    .form-inline .btn { width: 100%; }
+}
+
+/* Bouton */
+.btn-details {
+    margin-top: 15px;
+    padding: 8px 14px;
+    background: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-details:hover {
+    background: #3b7ac0;
+}

@@ -1,0 +1,78 @@
+.sondages-page {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    font-family: "Segoe UI", sans-serif;
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+.sondages-page h2 {
+    text-align: center;
+    color: #3a4a5a;
+    margin-top: 0;
+}
+
+.sondage-card {
+    background: #f7faff;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 4px solid #4a90e2;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.sondage-card h3 {
+    margin: 0;
+    color: #2f3e4f;
+}
+
+.description {
+    color: #6b7a8c;
+    margin-bottom: 15px;
+}
+
+/* Boutons */
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.option-btn {
+    padding: 10px;
+    border: none;
+    background: #4a90e2;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.option-btn:hover {
+    background: #3b7ac0;
+}
+
+/* Résultats */
+.resultats {
+    margin-top: 20px;
+}
+
+.result-bar {
+    background: #e6ecf5;
+    padding: 8px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #2f3e4f;
+}
+
+.hidden {
+    display: none;
+}
+
+.merci {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #2ecc71;
+}

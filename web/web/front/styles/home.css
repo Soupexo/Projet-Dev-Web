@@ -1,0 +1,278 @@
+html {
+    scroll-behavior: smooth;
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+@media (min-width: 1150px) {
+    header, main{
+        margin: 0 4rem 0 4rem;
+        padding: 0 4rem 0 4rem;
+    }
+
+    footer{
+        padding: 0rem 2rem 0 2rem;
+    }
+}
+
+body{
+    background-color: snow;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0px;
+    padding: 0px 10px;
+}
+
+main{
+    flex-grow:1;
+}
+
+header h1 a{
+    text-decoration: none;
+    color: #62003a;
+    text-align: center;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  flex-wrap: wrap;
+}
+
+.menu {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex-wrap: wrap; /* allow items to wrap to new lines on narrower viewports */
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.menu a:hover{
+    color: #62003a;
+    transition: ease-in 0.3s;
+}
+
+.menu a.btn-contact {
+  background: none;
+  color: #62003a;
+  padding: 0.5rem 1rem;
+  border: 2px solid #62003a;
+  border-radius: 5px;
+}
+
+.menu a.btn-contact:hover {
+    background-color: #62003a;
+    color: white;
+    transition: ease-in 0.3s;
+}
+
+/* Bouton hamburger */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Responsive - small screens */
+@media (max-width: 800px) {
+  .menu {
+    max-height: 0;              /* caché */
+    overflow: hidden;           /* masque le contenu */
+    flex-direction: column;     /* stacked links */
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 1rem;
+    opacity: 0;                 /* invisible */
+    transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out;
+  }
+
+  .menu.show {
+    max-height: 1000px;         /* hauteur suffisante pour contenir les liens */
+    opacity: 1;                 /* visible */
+  }
+
+  .menu a { width: 100%; padding: 0.5rem 0; }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* Medium screens -> compact spacing */
+@media (max-width: 1150px) {
+  .menu { gap: 1rem; justify-content: center; }
+  .menu a { font-size: 0.95rem; }
+}
+
+
+/* #profile-container{
+    text-align: center;
+    width: 100%;
+} */
+
+main h1{
+    margin-top: 2rem;
+}
+
+.main-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 25px;
+}
+
+.main-card #container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+}
+
+#container .my-timetable, #container .vie-scolaire, #container .communication{
+    display: grid;
+    gap: 2rem;
+}
+
+/* Emploi du temps */
+.my-timetable {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    font-family: "Segoe UI", sans-serif;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.my-timetable h2 {
+    margin-top: 0;
+    color: #3a4a5a;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Grille */
+.timetable-grid {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    row-gap: 15px;
+    margin-top: 20px;
+}
+
+/* Heures */
+.hour {
+    font-weight: bold;
+    color: #4a90e2;
+    display: flex;
+    align-items: center;
+}
+
+/* Cours */
+.course {
+    background: #f7faff;
+    padding: 12px 15px;
+    border-left: 4px solid #4a90e2;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.course .matiere {
+    margin: 0;
+    font-weight: bold;
+    color: #2f3e4f;
+}
+
+.course .salle {
+    margin: 3px 0 0;
+    font-size: 14px;
+    color: #6b7a8c;
+}
+
+/* Couleurs par matière (style Pronote) */
+.math { border-color: #ff9f43; }
+.web { border-color: #4a90e2; }
+.anglais { border-color: #9b59b6; }
+.sport { border-color: #2ecc71; }
+
+
+/* Cartes */
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.card h2 {
+    margin-top: 0;
+    font-size: 18px;
+    color: #3a4a5a;
+}
+
+/* Devoirs */
+.devoir {
+    background: #f7faff;
+    padding: 15px;
+    border-left: 4px solid #4a90e2;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+.devoir .date {
+    font-weight: bold;
+    color: #4a90e2;
+}
+
+footer {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #62003a;
+    color: white;
+}
+
+@media (max-width: 675px) {
+    footer{
+        flex-direction: column;
+    }
+}
+
+footer .droits-auteur{
+    text-align: center;
+}
+
+/* footer h1 {
+    color: blue;
+    text-align: center;
+    margin-bottom: 20px;
+} */
+
+.contact-icons {
+    float: right;
+    display: flex;
+    justify-content: center; /* Centrer les icônes horizontalement */
+    gap: 20px; /* Espacement entre les icônes */
+}
+
+@media(max-width: 400px){
+    .contact-icons {
+        display: flex;
+        justify-content: center; /* Centrer les icônes horizontalement */
+        flex-direction: column;
+    }
+}
+
+.contact-icons img {
+    width: 30px; /* Taille des images */
+    height: auto;
+}

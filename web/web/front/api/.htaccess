@@ -1,0 +1,4 @@
+RewriteEngine On
+
+# Router toutes les requêtes API vers index.php (même si le fichier existe)
+RewriteRule ^(.*)$ index.php [QSA,L]

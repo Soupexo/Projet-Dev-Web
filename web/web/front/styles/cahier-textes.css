@@ -1,0 +1,70 @@
+.cahier-texte-page {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    font-family: "Segoe UI", sans-serif;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.cahier-texte-page h2 {
+    text-align: center;
+    color: #3a4a5a;
+    margin-top: 0;
+}
+
+/* Liste des devoirs */
+.devoirs-list {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Élément de devoir */
+.devoir-item {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    gap: 15px;
+    padding: 15px;
+    background: #f7faff;
+    border-radius: 10px;
+    border-left: 4px solid #4a90e2;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+/* Date */
+.devoir-item .date {
+    font-weight: bold;
+    font-size: 18px;
+    color: #4a90e2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Contenu */
+.devoir-item .matiere {
+    margin: 0;
+    font-weight: bold;
+    color: #2f3e4f;
+    font-size: 17px;
+}
+
+.devoir-item .intitule {
+    margin: 5px 0 0;
+    font-size: 15px;
+    color: #4a4a4a;
+}
+
+.devoir-item .details {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #6b7a8c;
+}
+
+/* Couleurs par matière */
+.devoir-item .matiere:contains("Math") { color: #ff9f43; }
+.devoir-item .matiere:contains("Web") { color: #4a90e2; }
+.devoir-item .matiere:contains("Anglais") { color: #9b59b6; }

@@ -1,0 +1,92 @@
+/* =========================
+   BADGES - Groupes non finalisés
+========================= */
+.badge {
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.badge-success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.badge-warning {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.badge-info {
+    background-color: #d1ecf1;
+    color: #0c5460;
+}
+
+.badge-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* =========================
+   BARRE DE PROGRESSION
+========================= */
+.progress-container {
+    width: 100%;
+    background-color: #e9ecef;
+    border-radius: 4px;
+    overflow: hidden;
+    height: 24px;
+}
+
+.progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #62003a, #a8005a);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: width 0.3s ease;
+}
+
+/* =========================
+   ALERTES
+========================= */
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 1rem;
+    border-radius: 6px;
+    border-left: 4px solid #28a745;
+}
+
+/* =========================
+   LISTES
+========================= */
+.liste-items {
+    margin: 0;
+    padding-left: 1.5rem;
+    text-align: left;
+}
+
+.liste-items li {
+    padding: 0.25rem 0;
+    line-height: 1.4;
+}
+
+.text-muted {
+    color: #999;
+    font-style: italic;
+}
+
+/* =========================
+   SPÉCIFIQUE AUX TABLEAUX
+========================= */
+/* N'affecte QUE les cellules des tableaux, pas le header */
+.table-data td {
+    vertical-align: middle;
+    padding: 0.75rem;
+}

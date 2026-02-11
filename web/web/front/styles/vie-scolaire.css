@@ -1,0 +1,100 @@
+.vie-scolaire-page {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    font-family: "Segoe UI", sans-serif;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+.vie-scolaire-page h2 {
+    text-align: center;
+    color: #3a4a5a;
+}
+
+/* Onglets */
+.tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tab {
+    padding: 10px 15px;
+    border: none;
+    background: #e6ecf5;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.tab.active {
+    background: #4a90e2;
+    color: white;
+}
+
+/* Contenu onglets */
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Tableaux */
+.vs-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.vs-table th {
+    background: #e6ecf5;
+    padding: 12px;
+    text-align: left;
+}
+
+.vs-table td {
+    padding: 12px;
+    border-bottom: 1px solid #e6ecf5;
+}
+
+/* Boutons */
+.btn-add {
+    padding: 10px 15px;
+    background: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.btn-save {
+    margin-top: 15px;
+    padding: 10px 15px;
+    background: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-edit {
+    background: #f1c40f;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-delete {
+    background: #e74c3c;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+}

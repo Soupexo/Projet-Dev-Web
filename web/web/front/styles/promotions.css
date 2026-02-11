@@ -1,0 +1,123 @@
+.promotion-page {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    font-family: "Segoe UI", sans-serif;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+.promotion-page h2 {
+    text-align: center;
+    color: #3a4a5a;
+    margin-top: 0;
+}
+
+/* Infos générales */
+.promotion-info {
+    background: #f7faff;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #4a90e2;
+    margin-bottom: 25px;
+}
+
+.promotion-info p {
+    margin: 5px 0;
+    color: #4a4a4a;
+}
+
+/* Formulaire création / modification */
+.form-inline {
+    background: #f7faff;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 4px solid #4a90e2;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.form-inline .form-group {
+    display: flex;
+    flex-direction: column;
+    min-width: 160px;
+    flex: 1;
+}
+
+.form-inline label {
+    font-weight: 600;
+    color: #2f3b4a;
+    margin-bottom: 6px;
+}
+
+.form-inline .form-control {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #d0d7e2;
+    width: 100%;
+    max-width: 320px;
+}
+
+.form-inline .btn {
+    padding: 10px 14px;
+    border-radius: 6px;
+    border: none;
+    background: #4a90e2;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media (max-width: 720px) {
+    .form-inline { flex-direction: column; }
+    .form-inline .form-group { width: 100%; }
+    .form-inline .btn { width: 100%; }
+}
+
+/* Liste des étudiants */
+.etudiants-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+/* Carte étudiant */
+.etudiant-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #f7faff;
+    padding: 15px;
+    border-radius: 10px;
+    border-left: 4px solid #4a90e2;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+/* Avatar rond */
+.avatar {
+    width: 50px;
+    height: 50px;
+    background: #4a90e2;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Infos étudiant */
+.etudiant-card .nom {
+    margin: 0;
+    font-weight: bold;
+    color: #2f3e4f;
+}
+
+.etudiant-card .groupe {
+    margin: 3px 0 0;
+    font-size: 14px;
+    color: #6b7a8c;
+}
