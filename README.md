@@ -1,7 +1,7 @@
 # Projet-Dev-Web
 
 Projet consistant en l’implémentation d’un progiciel Java (Swing et AWT) de gestion complète consommant une API REST en PHP, accompagné d’un site web de gestion développé en PHP.
-1. Le dossier **dev** contient les fichiers sources de l'application ainsi que certaines ressources complèmentaires (script de téléchargement de la ressource gson.jar, README local ...)
+1. Le dossier **dev** contient les fichiers sources de l'application ainsi que certaines ressources complémentaires (script de téléchargement de la ressource gson.jar, README local ...)
 2. Le dossier **web**, quant à lui, contient le site web en PHP avec son style, son API ...
 
 ## Téléchargement des dépendances
@@ -36,7 +36,7 @@ Copiez-le dans le dossier `lib` de votre projet.
 
 ---
 
-## Accès de la projet web
+## Accès au projet web
 
 ### 1. Premier contact
 Pour un premier accès au site web, vous pouvez vous diriger directement vers `routeur.php`.
